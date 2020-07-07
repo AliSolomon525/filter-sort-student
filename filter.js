@@ -10,3 +10,14 @@ const elevenFiftyMenu = [
   { name: "Potato Wedges", price: 5, cookTime: 7 },
   { name: "Endpoint fried pickles", price: 4, cookTime: 8 },
 ];
+
+const filteredList = elevenFiftyMenu.filter(myFilter);
+// const filteredList = elevenFiftyMenu.filter(menuItem.cookTime > 5); - this shortens the function
+
+function myFilter(menuItem) {
+  return menuItem.cookTime < 10 && menuItem.cookTime > 5; //returns true
+}
+
+console.log(filteredList);
+
+

@@ -46,3 +46,12 @@ const presidents = [
   { first: "Barack", last: "Obama", year: 1961, passed: undefined },
   { first: "Donald", last: "Trump", year: 1946, passed: undefined },
 ];
+
+//Challenge: using Array.prototype.sort(), sort the presidents by birth year, oldest to youngest. You will need to implement logic that checks the year each president was born.
+//The sort() method sorts the elements of an array in place, meaning no copy is made, and returns the sorted array.
+
+function sortPrez(prez1, prez2) {
+  return prez1.year - prez2.year
+}
+
+console.log(presidents.sort(sortPrez));

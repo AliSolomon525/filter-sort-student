@@ -46,3 +46,13 @@ const presidents = [
   { first: "Barack", last: "Obama", year: 1961, passed: undefined },
   { first: "Donald", last: "Trump", year: 1946, passed: undefined },
 ];
+
+// Challenge: using the Array.prototype.filter() method, filter through the presidents array and console.log only the presidents who were born in the 1900's.
+
+const prezList = presidents.filter(myFilter);
+
+function myFilter(specialPrez) {
+  return specialPrez.year >= 1900 && specialPrez.year <= 2000;
+}
+
+console.log(prezList);
